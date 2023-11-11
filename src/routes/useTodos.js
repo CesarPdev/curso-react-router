@@ -9,6 +9,7 @@ function useTodos() {
     loading,
     error,
   } = useLocalStorage('TODOS_V2', []);
+  
   const [searchValue, setSearchValue] = React.useState('');
   
   const completedTodos = todos.filter(todo => !!todo.completed).length;
